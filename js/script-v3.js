@@ -135,7 +135,7 @@ function getPrice(element, className) {
 
 // formating price to neccessary format
 function formatPrice(price) {
-  return price.toFixed(2).replace(".", ",") + " zł";
+  return Math.round(price) + " zł";
 }
 
 function handleRadioButtonChange(radioButton) {
