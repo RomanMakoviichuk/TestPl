@@ -129,7 +129,8 @@ let totalDiscount = document.querySelector(".total-discount");
 // get price from input
 function getPrice(element, className) {
   const priceText = element.querySelector(className).textContent;
-  return parseFloat(priceText.replace("zł", "").replace(",", "."));
+  const price = parseFloat(priceText.replace("zł", "").replace(",", "."));
+  return Math.round(price);
 }
 
 // formating price to neccessary format
