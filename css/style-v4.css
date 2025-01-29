@@ -315,6 +315,7 @@ main {
   gap: 4px;
 }
 .product-advantages__item {
+  font-family: "Bebas Neue", sans-serif;
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -356,7 +357,7 @@ main {
   margin-top: 10px;
   padding: 9px 12px;
 }
-.package__item:nth-child(2):before {
+.package__item:nth-child(3):before {
   content: "BEST SELLER";
   position: absolute;
   top: -12px;
@@ -375,7 +376,7 @@ main {
   content: "DARMOWA DOSTAWA";
   position: absolute;
   top: -12px;
-  left: calc(50% + (95px / 2));
+  left: 50%;
   transform: translateX(-50%);
   background: #101828;
   border-radius: 20px;
@@ -391,11 +392,11 @@ main {
   margin-top: 10px;
   padding: 9px 12px;
 }
-.package__item:last-child:before {
+.package__item:last-child:after {
   content: "DARMOWA DOSTAWA";
   position: absolute;
   top: -12px;
-  left: 50%;
+  left: calc(50% + (95px / 2));
   transform: translateX(-50%);
   background: #101828;
   border-radius: 20px;
